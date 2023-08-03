@@ -573,7 +573,6 @@ hr {
 .form-container .form-group input:focus {
     outline: none;
     border-color: #e81cff;
-    transform: scale(1);
 }
 
 .form-container .form-group textarea::placeholder {
