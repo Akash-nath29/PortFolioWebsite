@@ -12,12 +12,22 @@
     <div class="container">
         <nav class="navbar" id="navbar">
             <h1><a href="#home">akash.nath()</a></h1>
-            <ul>
+            <ul id="menuList">
                 <li class="nav-link"><a href="#home">Home</a></li>
                 <li class="nav-link"><a href="#about">About</a></li>
                 <li class="nav-link"><a href="#projects">Projects</a></li>
                 <li class="nav-link"><a href="#contact">Contact</a></li>
             </ul>
+            <svg id="menuToggle" xmlns="http://www.w3.org/2000/svg" height="2em"
+                viewBox="0 0 448 512" onclick="toggleMenu()">
+                <style>
+                    #menuToggle {
+                        fill: #ffffff
+                    }
+                </style>
+                <path
+                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+            </svg>
         </nav>
         <!-- Home Section -->
         <section class="home" id="home">
@@ -193,7 +203,8 @@
                                 <textarea name="textarea" id="textarea" rows="10" cols="50" required=""
                                     placeholder="Write Your Thought" autocomplete="off"></textarea>
                             </div>
-                            <button class="form-submit-btn" type="submit" onclick="alert('This feature is not available right now! Stay tuned to unlock this feature !')">Submit</button>
+                            <button class="form-submit-btn" type="submit"
+                                onclick="alert('This feature is not available right now! Stay tuned to unlock this feature !')">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -207,7 +218,8 @@
             <a href="#contact">Contact</a>
         </section>
         <div class="footer">
-            <a href="https://github.com/Akash-nath29/PortFolioWebsite/blob/main/LICENSE">© Copyright Reserved</a> Made with ❤️
+            <a href="https://github.com/Akash-nath29/PortFolioWebsite/blob/main/LICENSE">© Copyright Reserved</a> Made
+            with ❤️
             by Akash
         </div>
     </div>

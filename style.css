@@ -41,6 +41,9 @@ hr {
     z-index: 999;
     transition: 0.4s;
 }
+.navbar #menuToggle {
+    display: none;
+}
 .sticky {
     background-color: #000063;
 }
@@ -749,4 +752,38 @@ hr {
 .footer a {
     color: white;
     margin-right: 5vh;
+}
+
+@media screen and (max-width:700px) {
+    /* .navbar svg {
+        display: block;
+    } */
+    .navbar ul {
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .navbar ul li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .navbar ul li a {
+        color: black;
+    }
+    .navbar #menuToggle {
+        display: block;
+        margin-right: 2vh;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
