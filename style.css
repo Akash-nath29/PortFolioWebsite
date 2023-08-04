@@ -41,9 +41,11 @@ hr {
     z-index: 999;
     transition: 0.4s;
 }
+
 .navbar #menuToggle {
     display: none;
 }
+
 .sticky {
     background-color: #000063;
 }
@@ -119,6 +121,7 @@ hr {
     color: red;
     font-size: 70px;
 }
+
 #iAm {
     color: white;
     font-size: 15px;
@@ -234,6 +237,11 @@ hr {
     width: 100%;
     height: 95vh;
 }
+.projectSlider {
+    display: flex;
+    flex-basis: 1;
+    margin-bottom: 3vh;
+}
 
 #projectsHeading {
     color: white;
@@ -269,10 +277,6 @@ hr {
 .projectsHeader {
     position: relative;
     margin-top: 5vh;
-    margin-bottom: 5vh;
-}
-
-.projectSlider {
     display: flex;
     /* flex-direction: column; */
     flex-basis: 1;
@@ -513,7 +517,6 @@ hr {
     border: 2px solid transparent;
     padding: 32px 24px;
     font-size: 14px;
-    font-family: inherit;
     color: white;
     display: flex;
     flex-direction: column;
@@ -678,54 +681,67 @@ hr {
         transform: translateY(-400%);
     }
 }
-.contact .left .contactSection a{
+
+.contact .left .contactSection a {
     margin-top: 5vh;
     text-decoration: none;
     color: white;
 }
+
 .contact svg {
     margin: 1.4vh;
 }
+
 #twitter {
     transition: 0.4s;
 }
+
 #twitter:hover {
     fill: #0088ff;
     transform: scale(1.2);
     filter: drop-shadow(10px 10px 20px white);
 }
+
 #email {
     transition: 0.4s;
 }
+
 #email:hover {
     fill: #ff6b6b;
     transform: scale(1.2);
     filter: drop-shadow(10px 10px 20px white);
 }
+
 #instagram {
     transition: 0.4s;
 }
+
 #instagram:hover {
     fill: #fd0076;
     transform: scale(1.2);
     filter: drop-shadow(10px 10px 20px white);
 }
+
 #facebook {
     transition: 0.4s;
 }
+
 #facebook:hover {
     fill: #6142ff;
     transform: scale(1.2);
     filter: drop-shadow(10px 10px 20px white);
 }
+
 #github {
     transition: 0.4s;
 }
+
 #github:hover {
     fill: #797979;
     transform: scale(1.2);
     filter: drop-shadow(10px 10px 20px white);
 }
+
 .links {
     display: flex;
     align-items: center;
@@ -735,9 +751,11 @@ hr {
     margin-top: 5vh;
     padding: 2vh 0;
 }
+
 .links a {
     color: white;
 }
+
 .footer {
     width: 100%;
     margin: auto;
@@ -749,6 +767,7 @@ hr {
     height: 10vh;
     color: white;
 }
+
 .footer a {
     color: white;
     margin-right: 5vh;
@@ -758,9 +777,19 @@ hr {
     /* .navbar svg {
         display: block;
     } */
+    .navbar {
+        position: sticky;
+        top: 0 !important;
+        z-index: 999;
+    }
+
+    hr {
+        width: 80%;
+    }
+
     .navbar ul {
         width: 100%;
-        background-color:#000063;
+        background-color: #000063;
         position: absolute;
         top: 100%;
         z-index: 1;
@@ -769,21 +798,144 @@ hr {
         overflow: hidden;
         transition: 0.5s;
     }
+
     .navbar ul li {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
     .navbar ul li a {
         color: white;
     }
+
     .navbar #menuToggle {
         display: block;
         margin-right: 2vh;
     }
+
     .about {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
+    .home h1 {
+        font-size: 50px;
+    }
+
+    .iAm .loader .words .word {
+        font-size: 17px;
+    }
+
+    #aboutHeading {
+        margin-top: 2vh;
+    }
+
+    .about {
+        height: 100vh;
+    }
+
+    .about img {
+        width: 300px;
+        margin-left: 4vh;
+    }
+
+    .about .aboutMe {
+        top: 50%;
+        left: 5%;
+        margin: 2vh;
+        margin-bottom: 5vh;
+    }
+
+    .about .aboutMe p {
+        width: 100%;
+    }
+    .projects {
+        height: auto;
+    }
+
+    #projectsHeading {
+        margin-top: 2vh;
+    }
+
+    #projectsHeading::before {
+        width: 80%;
+    }
+
+    #projectsHeading::after {
+        width: 80%;
+    }
+
+    .projectSlider {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 1;
+        top: 20%;
+    }
+    .projectSlider img {
+        width: 350px;
+    }
+    .image {
+        width: 350px;
+        position: relative;
+        transition: 0.3s;
+        cursor: pointer;
+        margin-bottom: 2vh;
+    }
+    #githubLink {
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #contactHeading {
+        margin-top: 2vh;
+        margin-bottom: 0;
+    }
+    #contactHeading::before {
+        width: 80%;
+    }
+    #contactHeading::after {
+        width: 80%;
+    }
+    .contact .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact .left h1 {
+        margin-bottom: 2vh;
+    }
+    .contact .left p {
+        width: fit-content;
+        font-size: 20px;
+        margin-top: 2vh;
+    }
+    .form-container {
+        margin: 5vh;
+        width: 370px;
+    }
+    .links {
+        margin-top: 2vh;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 30px;
+    }
+    .footer a {
+        margin-right: 0;
+    }
+
 }
