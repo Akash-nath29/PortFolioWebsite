@@ -10,6 +10,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 hr {
     border: 0;
     clear: both;
