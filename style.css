@@ -241,6 +241,7 @@ hr {
     width: 100%;
     height: 95vh;
 }
+
 .projectSlider {
     display: flex;
     flex-basis: 1;
@@ -778,6 +779,7 @@ hr {
 }
 
 @media screen and (max-width:700px) {
+
     /* .navbar svg {
         display: block;
     } */
@@ -855,6 +857,7 @@ hr {
     .about .aboutMe p {
         width: 100%;
     }
+
     .projects {
         height: auto;
     }
@@ -880,9 +883,11 @@ hr {
         flex-basis: 1;
         top: 20%;
     }
+
     .projectSlider img {
         width: 350px;
     }
+
     .image {
         width: 350px;
         position: relative;
@@ -890,47 +895,58 @@ hr {
         cursor: pointer;
         margin-bottom: 2vh;
     }
+
     #githubLink {
         margin-top: 2vh;
         margin-bottom: 5vh;
     }
+
     .contact {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     #contactHeading {
         margin-top: 2vh;
         margin-bottom: 0;
     }
+
     #contactHeading::before {
         width: 80%;
     }
+
     #contactHeading::after {
         width: 80%;
     }
+
     .contact .left {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     .contact .left h1 {
         margin-bottom: 2vh;
     }
+
     .contact .left p {
         width: fit-content;
         font-size: 20px;
         margin-top: 2vh;
     }
+
     .form-container {
         margin: 5vh;
         width: 370px;
     }
+
     .links {
         margin-top: 2vh;
     }
+
     .footer {
         display: flex;
         flex-direction: column;
@@ -938,6 +954,7 @@ hr {
         justify-content: center;
         line-height: 30px;
     }
+
     .footer a {
         margin-right: 0;
     }
