@@ -46,7 +46,7 @@ hr {
     transition: 0.4s;
 }
 
-.navbar #menuToggle {
+.navbar #openMenuBtn {
     display: none;
 }
 
