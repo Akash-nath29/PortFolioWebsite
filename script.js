@@ -1,3 +1,4 @@
+//sticky navbar
 let nav = document.getElementById("navbar");
 window.onscroll = () => {
     if (window.scrollY > 20) {
@@ -7,6 +8,8 @@ window.onscroll = () => {
         nav.classList.remove("sticky");
     }
 }
+
+//collapsed navbar for mobile window
 
 let menuList = document.getElementById("menuList");
 menuList.style.maxHeight = "0px" ;
@@ -29,4 +32,20 @@ function toggleMenu() {
         menuBtn.style.display = "block";
     }
 
+}
+
+//sending Email
+
+function sendMail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "anath5440@gmail.com",
+        Password : "FF849425973D9801865E72568398DF0F985B",
+        To : 'akashnathkrishnagar@gmail.com',
+        From : document.getElementById("emailInput").value,
+        Subject : "User Enquery",
+        Body : document.getElementById("nameInput").value + " says: <br/>" + document.getElementById("textarea").value
+    }).then(
+      message => alert("Message Sent Succesfully")
+    );
 }

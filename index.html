@@ -206,10 +206,15 @@
                 </form> -->
                 <div class="contactForm">
                     <div class="form-container">
-                        <form class="form">
+                        <form class="form" onsubmit="sendMail(); reset(); return false">
                             <div class="form-group">
                                 <label for="emailInput">Email</label>
                                 <input type="text" id="emailInput" name="email" required="" placeholder="Enter Email"
+                                    autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameInput">Name</label>
+                                <input type="text" id="nameInput" name="name" required="" placeholder="Enter Name"
                                     autocomplete="off">
                             </div>
                             <div class="form-group">
@@ -217,8 +222,7 @@
                                 <textarea name="textarea" id="textarea" rows="10" cols="50" required=""
                                     placeholder="Write Your Thought" autocomplete="off"></textarea>
                             </div>
-                            <button class="form-submit-btn" type="submit"
-                                onclick="alert('This feature is not available right now! Stay tuned to unlock this feature !')">Submit</button>
+                            <button class="form-submit-btn" type="submit">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -238,6 +242,8 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 </body>
 
 </html>
