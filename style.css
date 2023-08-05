@@ -789,6 +789,9 @@ hr {
         z-index: 999;
     }
 
+    .navbar #openMenBtn {
+        display: block;
+    }
     hr {
         width: 80%;
     }
