@@ -779,6 +779,9 @@ hr {
 }
 
 @media screen and (max-width:700px) {
+    body::-webkit-scrollbar {
+        display: none;
+    }
 
     /* .navbar svg {
         display: block;
@@ -792,6 +795,7 @@ hr {
     .navbar #openMenBtn {
         display: block;
     }
+
     hr {
         width: 80%;
     }
