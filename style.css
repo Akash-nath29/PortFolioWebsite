@@ -641,7 +641,7 @@ hr {
 .word {
     display: block;
     height: 100%;
-    color: #0088ff;
+    color: #ff0000;
     animation: spin_4991 4s infinite;
 }
 
