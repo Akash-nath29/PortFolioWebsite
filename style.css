@@ -23,6 +23,20 @@ hr {
     height: 1px;
 }
 
+#backToTop {
+    position: fixed;
+    top: 90%;
+    right: 5% !important;
+    z-index: 100;
+    background-color: rgb(255, 0, 0);
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+}
+
 .container {
     width: 100%;
     display: flex;
@@ -31,6 +45,7 @@ hr {
     justify-content: center;
     background: url(img/portFolioBackground.svg) no-repeat center center fixed;
     background-size: cover;
+    position: relative;
 }
 
 .navbar {

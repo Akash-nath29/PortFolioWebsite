@@ -1,11 +1,14 @@
 //sticky navbar
 let nav = document.getElementById("navbar");
+let backToTop = document.getElementById("backToTop");
 window.onscroll = () => {
     if (window.scrollY > 20) {
         nav.classList.add("sticky");
+        backToTop.style.display = "block";
     }
     else {
         nav.classList.remove("sticky");
+        backToTop.style.display = "none";
     }
 }
 
