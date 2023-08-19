@@ -771,6 +771,7 @@ hr {
     height: auto;
     margin-top: 5vh;
     padding: 2vh 0;
+    background-color: rgba(0, 0, 0, 0.259);
 }
 
 .footer {
@@ -798,7 +799,7 @@ hr {
 }
 .column a {
     color: white;
-    margin: 2vh 0 0 0;
+    margin: 1vh 0 0 0;
 }
 .column h3 {
     color: white;
@@ -812,13 +813,13 @@ hr {
     text-decoration: none;
     margin-bottom: 2vh;
 }
-.third svg {
-    position: absolute;
-    top: 18px;
-    left: -20px;
-}
 #lastText {
     font-size: 15px;
+    width: 70%;
+}
+#lastText a {
+    text-decoration: underline;
+    margin-top: 5vh;
 }
 
 @media screen and (max-width:700px) {
