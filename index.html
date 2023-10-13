@@ -7,6 +7,7 @@
     <title>PortFolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="website icon" href="img/portFolioIcon.png">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
         </a>
         <nav class="navbar" id="navbar">
             <h1><a href="#home">akash.nath()</a></h1>
-            <ul id="menuList">
+            <ul id="menuList" class="menuList">
                 <li class="nav-link"><a href="#home">Home</a></li>
                 <li class="nav-link"><a href="#about">About</a></li>
                 <li class="nav-link"><a href="#projects">Projects</a></li>
@@ -68,16 +69,18 @@
             </center>
         </div>
         <section class="about" id="about">
-            <img src="img/myProfilePhoto.jpg" alt="Profile Photo">
+            <img src="img/myProfilePhoto.jpg" alt="Profile Photo" id="myPhoto">
             <div class="aboutMe">
                 <h1>I am <span>Akash Nath</span> & I am</h1>
                 <p>a 18 year old student from India. Since 14 years old, my passion was to learn coding and to be a
                     developer. I have knowledge on Python, Java and Javascript. I have over 2 years of experience in
                     Python. <br> <br> With that I have experience working in Flask and Django, the python framework used
                     for web-development. So yeah, I am totally into web-development.</p>
-                <a href="docs/cv.pdf" download="docs/cv.pdf"><button class="getCv">Get CV</button></a>
-                <a href="https://www.upwork.com/freelancers/~01e0724608edcc944d"><button class="getCv">Hire
-                        Me</button></a>
+                <span>
+                    <a href="docs/cv.pdf" download="docs/cv.pdf"><button class="getCv">Get CV</button></a>
+                    <a href="https://www.upwork.com/freelancers/~01e0724608edcc944d"><button class="getCv">Hire
+                            Me</button></a>
+                </span>
             </div>
         </section>
 
@@ -128,7 +131,8 @@
                     <img src="img/ai-image-generator.png" alt="">
                     <div class="textContent">
                         <h1>AI Image Generator</h1>
-                        <p>An Flask based image generator application capable to reate image from text prompts. It uses 'OpenAI' module to generate images</p>
+                        <p>An Flask based image generator application capable to reate image from text prompts. It uses
+                            'OpenAI' module to generate images</p>
                         <a href="https://github.com/Akash-nath29/ai-image-generator">Check Out On Github <img
                                 src="icons/rightArrrow.svg" alt=""></a>
                     </div>
@@ -137,7 +141,8 @@
                     <img src="img/taskManager.png" alt="">
                     <div class="textContent">
                         <h1>Task Manager</h1>
-                        <p>A Flask based application connected with database to manage your tasks and to increase your efficiency.</p>
+                        <p>A Flask based application connected with database to manage your tasks and to increase your
+                            efficiency.</p>
                         <a href="https://github.com/Akash-nath29/TODO_FLASK">Check Out On Github <img
                                 src="icons/rightArrrow.svg" alt=""></a>
                     </div>
@@ -146,7 +151,8 @@
                     <img src="img/logInDemo.png" alt="">
                     <div class="textContent">
                         <h1>LogIn Simulator</h1>
-                        <p>A flask based login simulator connected with secure database to manage user data properly.</p>
+                        <p>A flask based login simulator connected with secure database to manage user data properly.
+                        </p>
                         <a href="https://github.com/Akash-nath29/Login-Demo-Flask">Check Out On Github <img
                                 src="icons/rightArrrow.svg" alt=""></a>
                     </div>
@@ -236,7 +242,8 @@
                 </form> -->
                 <div class="contactForm">
                     <div class="form-container">
-                        <form class="form" action="https://formsubmit.co/4058266b2404a11332929544f38a54e9" method="POST">
+                        <form class="form" action="https://formsubmit.co/4058266b2404a11332929544f38a54e9"
+                            method="POST">
                             <!-- HoneyPot -->
                             <input type="text" name="_honey" style="display: none;">
 
@@ -296,7 +303,9 @@
                         anath5440@gmail.com
                     </span>
                 </a>
-                <span id="lastText">This Site is designed and made by Akash Nath. <br><a href="https://github.com/Akash-nath29/PortFolioWebsite/blob/main/LICENSE"> All rights are Reserved</a></span>
+                <span id="lastText">This Site is designed and made by Akash Nath. <br><a
+                        href="https://github.com/Akash-nath29/PortFolioWebsite/blob/main/LICENSE"> All rights are
+                        Reserved</a></span>
             </div>
         </section>
         <div class="footer">
@@ -308,6 +317,7 @@
     <script src="script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
+    
 </body>
 
 </html>

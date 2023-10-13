@@ -1,13 +1,26 @@
+// Scroll Reveal 
+window.sr = new ScrollReveal();
+
+sr.reveal('.home', { delay: 300 });
+sr.reveal('.about', { delay: 300 });
+sr.reveal('.projects', { delay: 300 });
+sr.reveal('.contact', { delay: 300 });
+sr.reveal('.links', { delay: 300 });
+sr.reveal('.footer', { delay: 300 });
+
 //sticky navbar
 let nav = document.getElementById("navbar");
+let navLinkList = document.querySelector('.menuList');
 let backToTop = document.getElementById("backToTop");
 window.onscroll = () => {
     if (window.scrollY > 20) {
         nav.classList.add("sticky");
+        navLinkList.classList.add("scrolledList");
         backToTop.style.display = "block";
     }
     else {
         nav.classList.remove("sticky");
+        navLinkList.classList.remove("scrolledList");
         backToTop.style.display = "none";
     }
 }

@@ -82,6 +82,7 @@ hr {
     margin-right: 5vh;
 }
 
+
 .navbar ul li {
     list-style: none;
     margin: 1vh 3vh;
@@ -599,7 +600,8 @@ hr {
 
 .form-container .form-group input:focus {
     outline: none;
-    border-color: #e81cff;
+    box-shadow: 5px 5px 50px #000;
+    border: none;
 }
 
 .form-container .form-group textarea::placeholder {
@@ -608,7 +610,8 @@ hr {
 
 .form-container .form-group textarea:focus {
     outline: none;
-    border-color: #e81cff;
+    box-shadow: 5px 5px 50px #000;
+    border: none;
 }
 
 .form-container .form-submit-btn {
@@ -719,7 +722,7 @@ hr {
 }
 
 #twitter:hover {
-    fill: #0088ff;
+    fill: #4cabff;
     transform: scale(1.2);
     filter: drop-shadow(10px 10px 20px white);
 }
@@ -729,7 +732,7 @@ hr {
 }
 
 #email:hover {
-    fill: #ff6b6b;
+    fill: #ffa4a4;
     transform: scale(1.2);
     filter: drop-shadow(10px 10px 20px white);
 }
@@ -739,7 +742,7 @@ hr {
 }
 
 #instagram:hover {
-    fill: #fd0076;
+    fill: #ff86be;
     transform: scale(1.2);
     filter: drop-shadow(10px 10px 20px white);
 }
@@ -749,7 +752,7 @@ hr {
 }
 
 #facebook:hover {
-    fill: #6142ff;
+    fill: #c2b5f6;
     transform: scale(1.2);
     filter: drop-shadow(10px 10px 20px white);
 }
@@ -759,7 +762,7 @@ hr {
 }
 
 #github:hover {
-    fill: #797979;
+    fill: #c6c6c6;
     transform: scale(1.2);
     filter: drop-shadow(10px 10px 20px white);
 }
@@ -791,6 +794,7 @@ hr {
     color: white;
     margin-right: 5vh;
 }
+
 .column {
     display: flex;
     flex-direction: column;
@@ -798,33 +802,39 @@ hr {
     justify-content: space-evenly;
     margin: 2vh 5vh;
 }
+
 .column a {
     color: white;
     margin: 1vh 0 0 0;
 }
+
 .column h3 {
     color: white;
 }
+
 .third {
     position: relative;
     color: white;
     align-items: center;
 }
+
 .third a {
     text-decoration: none;
     margin-bottom: 2vh;
 }
+
 #lastText {
     font-size: 15px;
     width: 70%;
 }
+
 #lastText a {
     text-decoration: underline;
     margin-top: 5vh;
 }
 
 @media screen and (max-width:700px) {
-    body::-webkit-scrollbar {
+    html--webkit-scrollbar {
         display: none;
     }
 
@@ -847,7 +857,6 @@ hr {
 
     .navbar ul {
         width: 100%;
-        background-color: #000063;
         position: absolute;
         top: 100%;
         z-index: 1;
@@ -855,8 +864,15 @@ hr {
         flex-direction: column;
         overflow: hidden;
         transition: 0.5s;
+        box-shadow: 10px 10px 50px #000;
     }
-
+    .menuList {
+        background-color: transparent;
+    }
+    .scrolledList {
+        background-color: #000063;
+        box-shadow: 0px 0px 0px #000;
+    }
     .navbar ul li {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -892,22 +908,31 @@ hr {
 
     .about {
         height: 100vh;
+        margin-bottom: 15vh;
     }
 
     .about img {
         width: 300px;
         margin-left: 4vh;
+        margin-bottom: 5vh;
     }
 
     .about .aboutMe {
         top: 50%;
         left: 5%;
-        margin: 2vh;
-        margin-bottom: 5vh;
+        margin-bottom: 10vh;
+        margin-top: 7vh;
+    }
+
+    .about .aboutMe h1, p {
+        margin-left: 2vh;
+        margin-right: 2vh;
     }
 
     .about .aboutMe p {
-        width: 100%;
+        width: 90%;
+        word-wrap: break-word;
+        
     }
 
     .projects {
@@ -946,6 +971,7 @@ hr {
         position: relative;
         transition: 0.3s;
         cursor: pointer;
+        margin: 0 2vh;
         margin-bottom: 2vh;
     }
 
@@ -1011,16 +1037,20 @@ hr {
     .footer a {
         margin-right: 0;
     }
+
     .column {
         margin: 2vh;
         font-size: 12px;
     }
+
     .column a {
         margin: 10px 0 0 0;
     }
+
     .third {
         display: none;
     }
+
     #backToTop {
         right: 10%;
     }
