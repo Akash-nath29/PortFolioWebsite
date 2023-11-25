@@ -747,11 +747,11 @@ hr {
     filter: drop-shadow(10px 10px 20px white);
 }
 
-#facebook {
+#linkedin {
     transition: 0.4s;
 }
 
-#facebook:hover {
+#linkedin:hover {
     fill: #c2b5f6;
     transform: scale(1.2);
     filter: drop-shadow(10px 10px 20px white);
