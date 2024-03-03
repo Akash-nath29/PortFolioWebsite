@@ -906,16 +906,17 @@ hr {
     top: 56%;
     left: 26%;
     border: none;
-    animation: spin infinite 2s linear;
+    animation: spin infinite 10s linear;
+    filter: drop-shadow(0 0 20px white);
+}
 
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
 
-        100% {
-            transform: rotate(360deg);
-        }
+    to {
+        transform: rotate(360deg);
     }
 }
 
@@ -1157,9 +1158,19 @@ hr {
 
     .skills {
         display: grid;
-        grid-template-columns: repeat(1, 25fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 12px;
         height: auto;
         margin-bottom: 15vh;
+        padding: 5vh;
+    }
+
+    .skill {
+        height: 5vh;
+    }
+
+    #current-learning {
+        top: 59%;
+        left: 45%;
     }
 }

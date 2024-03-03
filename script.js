@@ -38,7 +38,7 @@ let menuIcon = '<svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" height="2e
 
 function toggleMenu() {
     if (menuList.style.maxHeight == "0px") {
-        menuList.style.maxHeight = "300px";
+        menuList.style.maxHeight = "100vh";
         menuBtn.innerHTML = crossIcon;
         menuBtn.style.display = "block";
     }
